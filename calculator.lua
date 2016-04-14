@@ -1,9 +1,29 @@
 -- titulo: Criptografador  
 -- autor: Lucas Menezes
 -- data: 12/04/2016
--- version: 0.1.2
+-- version: 0.2.0
 -- size:  ?
 
+function isnan(x) 
+  return x ~= x 
+end
+
+function checkError(value)
+  print(value)
+  print(type(value))
+  if isnan(value) == true or value == math.huge then
+    print("Performed operation resulted in not a number")
+    print("reset it to zero now? y/n")
+    answer = io.read()
+    if string.match(answer, "yes") or answer == "y" then
+      acc = 0
+      print(acc)
+    else
+      print("you can always use the command clear later")
+    end
+  end
+      
+end
 
 local add, sub, mult, div, no_op = 0, 1, 2, 4, 8
 function chooseOperation(str)
@@ -36,11 +56,9 @@ function chooseOperation(str)
   else
     print("unknown error")
   end
-  print(string.format("acc: %f",acc))
 end
 print("Simple Calcultator")
 cmdStr = io.read()
-mode = no_op
 
 acc  = 0-- var to represent the current result
 
@@ -48,6 +66,8 @@ acc  = 0-- var to represent the current result
 while(cmdStr ~= "quit")  do
 print("Received " .. cmdStr)
 chooseOperation(cmdStr)
+checkError(acc)
+print(string.format("acc: %f",acc))
 cmdStr = io.read()
 end
 
