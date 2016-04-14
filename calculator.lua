@@ -2,7 +2,6 @@
 -- author: Lucas Menezes
 -- date: 14/04/2016
 -- version: 1.0.0
--- size:  ?
 
 -- AE : x must be a numeric variable
 -- AS : true if x is NaN, else false.
