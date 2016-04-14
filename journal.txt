@@ -1,4 +1,24 @@
 
+Entrada 13: removi o campo tamanho do início do arquivo
+commit 4a6d978970536ee1442790c77a5a8d1017ba02a2
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 02:36:29 2016 -0300
+
+    removed size comment field
+
+Entrada 12: Subi o diário ao repositório
+commit 58c66d565cb1b89478158ca21cddbd668bf32b02
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 02:32:56 2016 -0300
+
+
+Entrada 11: Redigi a descrição do repositório
+commit ef0fad9088f5a73d9e03c886227632aa54c59893
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 02:21:24 2016 -0300
+
+    Added discription
+
 Entrada 10 : Adcionei o comando help e melhorei as assertivas
 commit 3d2bcb604716db8bbe1c020d6fa7656c7c4aee8d
 Author: LucasMW <great-lucas@hotmail.com>
