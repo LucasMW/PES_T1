@@ -1,8 +1,9 @@
 -- titulo: Criptografador  
 -- autor: Lucas Menezes
 -- data: 12/04/2016
--- version: 0.0.1
+-- version: 0.1.2
 -- size:  ?
+
 
 local add, sub, mult, div, no_op = 0, 1, 2, 4, 8
 function chooseOperation(str)
@@ -25,6 +26,13 @@ function chooseOperation(str)
     print ("enter next number")
     number = tonumber(io.read())
     acc = acc / number
+  elseif string.match(str, "clear")  then
+    acc = 0
+  elseif string.match(str, "set")  then
+    print ("set")
+    print ("enter next number")
+    number = tonumber(io.read())
+    acc = number
   else
     print("unknown error")
   end
