@@ -1,0 +1,72 @@
+
+Entrada 10 : Adcionei o comando help e melhorei as assertivas
+commit 3d2bcb604716db8bbe1c020d6fa7656c7c4aee8d
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 02:13:29 2016 -0300
+
+    added help
+
+Entrada 9 : Redigi a documentação das assertivas no código, regra 2
+commit a6e3daf555cd567bc3a179944140a326c78de5c7
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 02:04:18 2016 -0300
+
+    docummenting, aka pes rule 2
+
+
+Entrada 8 : Adicionei o caso de infinito negativo, que não estava sendo tratado antes.
+commit 8de8866ae9bd60348149d1206e1707c00aa44214
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 01:39:27 2016 -0300
+
+    added -inf case and remove useless prints
+
+Entrada 7: Adicionei tratamento para erros de cálculo, mediante interação com o usuário
+commit eff820a5bcb9f3e9e5190d5d984c5f429aa7cfba
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 01:31:13 2016 -0300
+
+    added non number treatment and advice
+
+Entrada 6: Adicionei os comandos clean e set para a lista de comandos
+commit 2e9b4b6929658eead664969e026347454e05961e
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 00:38:21 2016 -0300
+
+    added clean and set
+
+Entrada 5 : Programei a interpretação das quatro operações aritméticas elementares
+commit b02e69ccdfd405c64d1cac9c41bec1bbdcc3f2e9
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Thu Apr 14 00:24:06 2016 -0300
+
+    added four operations
+
+Entrada 4 : Rascunhei a interface da função que interpreta comandos
+commit 3a2b0da47a4f564381964273d35b77b20391db84
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Wed Apr 13 23:40:07 2016 -0300
+
+    planned function to call for operation decision
+
+Entrada 3 : primeira sincronia entre o repositório local e o na nuvem
+commit c95b0814200a7fbb5f9d7c29dca2e1ac3df74439
+Merge: bf6c8fe 3929986
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Wed Apr 13 23:19:38 2016 -0300
+
+    Merge https://github.com/LucasMW/PES_T1
+
+Entrada 2: Criação do repositório no github.
+commit 3929986df4b715d81dfe7929eddb3772efcb2a3b
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Wed Apr 13 23:19:01 2016 -0300
+
+    Initial commit
+
+Entrada 1: Comecei a rascunhar o projeto
+commit bf6c8fe253c001d0b507a29719cfce9d78ff3449
+Author: LucasMW <great-lucas@hotmail.com>
+Date:   Tue Apr 12 22:17:57 2016 -0300
+
+    Project start and draft
