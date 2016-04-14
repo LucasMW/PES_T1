@@ -1,7 +1,7 @@
 -- title: Calculator  
 -- author: Lucas Menezes
--- date: 12/04/2016
--- version: 0.3.0
+-- date: 14/04/2016
+-- version: 1.0.0
 -- size:  ?
 
 -- AE : x must be a numeric variable
@@ -30,6 +30,20 @@ function checkError(value)
 end
 
 
+
+-- auxiliary function to be called by choose operation, 
+-- when commands needs a new value to operate.
+-- the number is input from user
+-- AE : must be called by chooseOperation()
+-- expects user to input a valid number
+-- AS : number will be returned.
+-- and, eventually, will be used in command evaluation
+function receiveNextParameter()
+  print ("enter next number")
+  number = tonumber(io.read())
+    return number
+end
+
 -- AE : str should be a known command
 -- if a command is detected in str, the rest of str is ignored
 -- a command may ask an input parameter via keyboard
@@ -38,31 +52,26 @@ end
 
 function chooseOperation(str)
   if string.match(str, "add") then
-    print ("enter next number")
-    number = tonumber(io.read())
+    number = receiveNextParameter()
     acc = acc + number
   elseif string.match(str, "sub")  then
-    print ("sub")
-    print ("enter next number")
-    number = tonumber(io.read())
+    number = receiveNextParameter()
     acc = acc - number
   elseif string.match(str, "mult")  then
-    print ("mult")
-    print ("enter next number")
-    number = tonumber(io.read())
+    number = receiveNextParameter()
     acc = acc * number
   elseif string.match(str, "div")  then
-    print ("div")
-    print ("enter next number")
-    number = tonumber(io.read())
+    number = receiveNextParameter()
     acc = acc / number
   elseif string.match(str, "clear")  then
     acc = 0
   elseif string.match(str, "set")  then
-    print ("set")
-    print ("enter next number")
-    number = tonumber(io.read())
+    number = receiveNextParameter()
     acc = number
+  elseif string.match(str, "help")  then
+    print("commands: add, sub, mult, div, set, clear, help")
+    print("just input a command")
+    print("input a parameter if asked to")
   else
     print("unknown error")
   end
